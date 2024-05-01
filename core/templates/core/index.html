@@ -1,7 +1,23 @@
 {% extends 'core/base.html' %}
+{% load crispy_forms_tags %}
 
 {% block content %}
+<h1 style="text-align:center">Engas Performance Review</h1>
+<br>
+<hr>
+<br>
 
-Hello
+<div class="row justify-content-center">
+    <p>Welcome to the Engas Performance Review. This form is designed to help you evaluate your performance. Please click the button below to start the form.</p>
+  </div>
 
+  <br>
+  <br>
+
+<div class="row justify-content-center">
+    <a href="/staff_detail"><button type="submit" class="btn btn-lg">Start the Form</button></a>
+  </div>
+
+<br>
+<br>
 {% endblock %}

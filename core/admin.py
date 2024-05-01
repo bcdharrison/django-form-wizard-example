@@ -1,8 +1,7 @@
 from django.contrib import admin
-from core.models import Business, Guest, Booking
+from core.models import Staff, PerformanceOne, PerformanceTwo
 
 # Register your models here.
-admin.site.register(Business)
-admin.site.register(Guest)
-admin.site.register(Booking)
-
+admin.site.register(Staff)
+admin.site.register(PerformanceOne)
+admin.site.register(PerformanceTwo)
