@@ -18,15 +18,15 @@ class Staff(models.Model):
 class PerformanceOne(models.Model):
 
     staff = models.ForeignKey(Staff, on_delete=models.CASCADE)
-    how_well_do_you_think_you_are_doing_on_the_job = models.TextField(default="")
-    which_parts_of_your_job_are_doing_well_and_where_do_you_think_you_could_improve = models.TextField(default="")
-    is_there_any_equipment_or_training_to_help_you_in_your_role = models.TextField(default="")
-    how_do_you_feel_about_your_job_and_the_company = models.TextField(default="")
-    what_would_you_change_if_you_could = models.TextField(default="")
-    what_are_your_achievable_goals_for_the_next_12_months = models.TextField(default="")
-    are_you_aware_of_what_you_need_to_do_to_achieve_these_goals = models.TextField(default="")
-    do_you_feel_you_have_achieved_the_goals_you_set_last_year = models.TextField(default="")
-    explain_how_you_have_or_why_you_have_managed_to_achieve_these_goals = models.TextField(default="")
+    q1 = models.TextField(default="")
+    q2 = models.TextField(default="")
+    q3 = models.TextField(default="")
+    q4 = models.TextField(default="")
+    q5 = models.TextField(default="")
+    q6 = models.TextField(default="")
+    q7 = models.TextField(default="")
+    q8 = models.TextField(default="")
+    q9 = models.TextField(default="")
 
 
     

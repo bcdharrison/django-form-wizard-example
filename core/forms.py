@@ -27,16 +27,19 @@ class PerformanceOneForm(forms.ModelForm):
         model = PerformanceOne
         exclude = ('staff',)
         fields = (
-                  'how_well_do_you_think_you_are_doing_on_the_job',
-                  'which_parts_of_your_job_are_doing_well_and_where_do_you_think_you_could_improve',
-                  'is_there_any_equipment_or_training_to_help_you_in_your_role',
-                  'how_do_you_feel_about_your_job_and_the_company',
-                  'what_would_you_change_if_you_could',
-                  'what_are_your_achievable_goals_for_the_next_12_months',
-                  'are_you_aware_of_what_you_need_to_do_to_achieve_these_goals',
-                  'do_you_feel_you_have_achieved_the_goals_you_set_last_year',
-                  'explain_how_you_have_or_why_you_have_managed_to_achieve_these_goals',
+            'q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9'
                 )
+        labels = {
+            'q1': 'How well do you think you are doing on the job?',
+            'q2': 'Which parts of your job are doing well and where do you think you could improve?',
+            'q3': 'Is there any equipment or training to help you in your role?',
+            'q4': 'How do you feel about your job and the company?',
+            'q5': 'What would you change if you could?',
+            'q6': 'What are your achievable goals for the next 12 months?',
+            'q7': 'Are you aware of what you need to do to achieve these goals?',
+            'q8': 'Do you feel you have achieved the goals you set last year?',
+            'q9': 'Explain how you have or why you have managed to achieve these goals',
+        }
 
 class PerformanceTwoForm(forms.ModelForm):
 
