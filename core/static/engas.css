@@ -1,0 +1,32 @@
+
+
+.bold-title label {
+    font-weight: bold;
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bold-title {
+    font-weight: bold;
+}
+
+form .bold-title {
+    font-weight: bold !important;
+}
+
+#div_id_first_name {
+    font-weight: bold;
+}
+
+/* This will make all labels bold */
+.form-group label {
+    font-weight: bold;
+}
+
+/* This will make radio button labels normal */
+input[type="radio"] label {
+    font-weight: normal;
+}

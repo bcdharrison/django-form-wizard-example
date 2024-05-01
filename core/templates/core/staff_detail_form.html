@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h1 style="text-align:center">Engas Performance Review</h1>
+<br>
+<hr>
+<br>
+<form action="" method="post" class="font-weight-bold">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <div class="row justify-content-center">
+        <button type="submit" class="btn btn-lg">Next</button>
+      </div>
+</form>
+<br>
+{% endblock %}
