@@ -30,6 +30,8 @@ DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'engas-performance-review.onrender.com']
 
+TIME_ZONE = 'Pacific/Auckland'
+USE_TZ = True
 
 # Application definition
 

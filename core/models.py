@@ -6,6 +6,7 @@ class Staff(models.Model):
     last_name = models.CharField(max_length=100)
     email = models.EmailField()
     position = models.CharField(max_length=100)
+    created_at_nz = models.DateTimeField(auto_now_add=True)
 
     @property
     def full_name(self):
